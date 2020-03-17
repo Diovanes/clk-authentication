@@ -15,8 +15,12 @@
 #
 ###
 FROM fabric8/java-alpine-openjdk8-jre
-ENV JAVA_OPTIONS="-Dquarkus.http.host=0.0.0.0 -Dquarkus.http.port=8080 -Djava.util.logging.manager=org.jboss.logmanager.LogManager"
+ENV JAVA_OPTIONS="-Dquarkus.http.host=0.0.0.0 -Djava.util.logging.manager=org.jboss.logmanager.LogManager "
 ENV AB_ENABLED=jmx_exporter
+ENV PORT=${PORT}
 COPY target/lib/* /deployments/lib/
 COPY target/*-runner.jar /deployments/app.jar
-ENTRYPOINT [ "/deployments/run-java.sh" ]
+EXPOSE 8080
+#ENTRYPOINT [ "/deployments/run-java.sh" ]
+
+CMD deployments/run-java.sh -Dquarkus.http.host=0.0.0.0 -Dquarkus.http.port=${PORT}

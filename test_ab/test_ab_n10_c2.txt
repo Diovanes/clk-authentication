@@ -1,0 +1,59 @@
+================= Mem Java =================
+  RSS
+242792
+
+================= Threads =================
+Total live threads: 13
+
+================= Test AB =================
+This is ApacheBench, Version 2.3 <$Revision: 1430300 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 3.19.217.251 (be patient).....done
+
+
+Server Software:        
+Server Hostname:        3.19.217.251
+Server Port:            8080
+
+Document Path:          /api/auth
+Document Length:        24 bytes
+
+Concurrency Level:      2
+Time taken for tests:   0.115 seconds
+Complete requests:      10
+Failed requests:        0
+Write errors:           0
+Total transferred:      1030 bytes
+HTML transferred:       240 bytes
+Requests per second:    86.81 [#/sec] (mean)
+Time per request:       23.038 [ms] (mean)
+Time per request:       11.519 [ms] (mean, across all concurrent requests)
+Transfer rate:          8.73 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.1      0       1
+Processing:    12   21   8.8     23      34
+Waiting:       12   21   8.8     23      34
+Total:         13   21   8.8     24      34
+
+Percentage of the requests served within a certain time (ms)
+  50%     24
+  66%     24
+  75%     28
+  80%     34
+  90%     34
+  95%     34
+  98%     34
+  99%     34
+ 100%     34 (longest request)
+
+================= Threads =================
+Total live threads: 15
+
+================= Mem Java =================
+  RSS
+242792
+

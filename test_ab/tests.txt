@@ -1,0 +1,10 @@
+./test.sh 10 2 > test_ab_n10_c2.txt &
+
+./test.sh 100 10 > test_ab_n100_c10.txt &
+
+./test.sh 1000 30 > test_ab_n1000_c30.txt &
+
+./test.sh 3000 50 > test_ab_n3000_c50.txt &
+
+./test.sh 10000 100 > test_ab_n10000_c100.txt &
+
