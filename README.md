@@ -1,7 +1,7 @@
-CELK Authentication
+Authentication
 ========================
 
-This guide demonstrates how your Quarkus application can use a database to store your user identities.
+This demonstrates how to use a Quarkus application for user authentication.
 
 ## Start the database
 
@@ -58,17 +58,3 @@ mvn test
 # Native mode
 mvn verify -Pnative
 ```  
-
-## Running in native
-
-You can compile the application into a native binary using:
-
-`mvn clean package -Pnative`
-
-_Note: You need to have a proper GraalVM configuration to build a native binary._
-
-and run with:
-
-`./target/security-jdbc-quickstart-1.0-SNAPSHOT-runner` 
-
-_NOTE:_ Don't forget to start the database.
